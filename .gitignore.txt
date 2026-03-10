@@ -1,0 +1,24 @@
+# archivos de entorno
+.env
+
+# dependencias
+vendor/
+node_modules/
+
+# logs
+*.log
+
+# sistema
+.DS_Store
+Thumbs.db
+
+# archivos temporales
+*.tmp
+
+# cache
+bootstrap/cache/
+storage/logs/
+
+# configuraciones locales
+.idea/
+.vscode/
