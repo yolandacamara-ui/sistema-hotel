@@ -204,6 +204,7 @@ Route::get('/productos', [HotelController::class, 'habitaciones'])
 
     Route::get('/dbup/cliente', [DbUpController::class, 'cliente']);
     Route::get('/dbup/orden', [DbUpController::class, 'orden']);
+    Route::get('/dbup/servicios', [DbUpController::class, 'servicios']);
 
     // Ocupacon
     
@@ -213,15 +214,20 @@ Route::get('/productos', [HotelController::class, 'habitaciones'])
 
     // DashBoard
     Route::get('/dashboard', [DashBoardController::class, 'index']);
-    Route::get('/dashboard/ventas', [DashBoardController::class, 'total_ventas']);
+    //Route::get('/dashboard/ventas', [DashBoardController::class, 'total_ventas']);
+    Route::match(['POST','GET'],'/dashboard/ventas', [DashBoardController::class, 'total_ventas']);
     Route::get('/dashboard/ventas/canal', [DashBoardController::class, 'total_canal']);
     Route::get('/dashboard/ventas/categoria', [DashBoardController::class, 'total_categorias']);//categoria_habitacion
     Route::get('/dashboard/ventas/habitacion', [DashBoardController::class, 'total_productos']);//habitacion
+    Route::match(['POST','GET'],'/dashboard/ventas/productoxgenero', [DashBoardController::class, 'total_ventas_productoxgenero']);//habitacion
+    //Route::Get('/dashboard/ventas/productoxgenero', [DashBoardController::class, 'total_ventas_productoxgenero']);//habitacion
+    //Route::get('/dashboard/demograficos/genero', [DashBoardController::class, 'demograficos_genero']);
+    Route::match(['POST','GET'],'/dashboard/demograficos/genero', [DashBoardController::class, 'demograficos_genero']);
+    Route::match(['POST','GET'],'/dashboard/demograficos/edad', [DashBoardController::class, 'demograficos_edades']);
+    
     
 
     // UNITY
-    //Route::post('/recibir-carrito',[CarritoController::class,'recibirCarrito']);
-    //Route::get('/ver-carrito',[CarritoController::class,'verCarrito']);
     Route::get('/ver-carrito', [CarritoController::class,'verCarrito']);
 
 

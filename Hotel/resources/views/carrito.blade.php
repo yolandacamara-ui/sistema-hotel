@@ -12,7 +12,7 @@
             padding-top: 50px;
             background-color: #2b3035;
             color: white;
-        }
+        } 
 
         .btn-abrir {
             padding: 15px 30px;

@@ -16,9 +16,6 @@ Route::post('/guardar_orden', [HotelController::class, 'guardar_orden'])
 Route::post('/validar-disponibilidad', [HotelController::class, 'validarDisponibilidad']);
 
 Route::get('/habitaciones', [Habitacion2Controller::class, 'obtenerHabitaciones']);
-
 Route::post('/recibir-carrito',[CarritoController::class,'recibirCarrito']);
-//Route::get('/ver-carrito',[CarritoController::class,'verCarrito']);
 
-//Route::post('/carrito', [CarritoController::class, 'guardar']);
 

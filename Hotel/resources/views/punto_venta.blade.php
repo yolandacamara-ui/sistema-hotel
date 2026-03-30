@@ -1,7 +1,7 @@
 @extends('app.punto')
  @section('contenidoCoffeeShop')
         <!-- Seccion de la gestion de la orden -->
-        <div id="app" class="gap-1 px-6 flex flex-1 justify-center py-5 ">
+        <div  class="gap-1 px-6 flex flex-1 justify-center py-5 ">
           <div class="layout-content-container flex flex-col max-w-[920px] flex-1">
             <div v-if="!extras" class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#181511] tracking-light text-[32px] font-bold leading-tight min-w-72">New Order</p></div>
             <!-- lista de los tipos de productos -->
@@ -214,7 +214,8 @@
        <!-- configuracion de los extras del producto -->
         
     </div>
-    <script src="{{ asset('vue.js') }}"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script>
         var app = new Vue({
             el: '#app'
@@ -444,6 +445,6 @@
                     
                     }
            });
-        </script
+        </script>
   
  @endsection

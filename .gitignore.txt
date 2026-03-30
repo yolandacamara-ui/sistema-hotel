@@ -22,3 +22,7 @@ storage/logs/
 # configuraciones locales
 .idea/
 .vscode/
+
+# archivos innecesarios
+ngrok.exe
+*.zip

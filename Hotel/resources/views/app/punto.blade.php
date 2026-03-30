@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
     />
     <title>Hotel</title>
+     <!--@vite(['resources/css/app.css', 'resources/js/app.js'])-->
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -61,6 +62,8 @@
 
         @yield('contenidoCoffeeShop') 
 </div>
+
+
 <script>
 
 </script>
